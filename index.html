@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<style>
+    body{margin: 0px 0px;color:#f5f5f5;background-color: #252525;}
+    #container{margin: 0px auto;display: flex;flex-direction: column;}
+    #title{margin: 0px auto;text-align: center;}
+    #title a{text-decoration: none;color: #f5f5f5;}
+    #calc{display: flex;flex-direction: column;margin: 0px auto;margin-top: 10px;}
+    #botones{display: flex;flex-direction: row;margin: 0px auto;padding: 10px;}
+    #izq{display: flex;flex-direction: column;}
+    #der{display: flex;flex-direction: column;}
+    textarea{color:#b0b0b0;resize: none;background-color: transparent;margin: 0px auto;width: 60%;font-size: 3em;height: 7.5vh;}
+    button{border-color: transparent; border-radius: 50%;font-size: 1.5em;padding: 10px;height: 55px;width: 55px;margin: 2px 2px;}
+    #white button{background-color: #b0b0b0;color: #252525;}
+    #numeros button{background-color: #454545;color: #f5f5f5;}
+    #orange{display: flex;flex-direction: column;}
+    #orange button{background-color: #ff8800;color:#f5f5f5;}
+</style>
+<body>
+
+    <div id="container">
+        <div id="title">
+            <h1>Calculadora</h1>
+            <a href="https://www.twitter.com/rotoforze" target="_blank">By rotoforze</a>
+        </div>
+        <div id="calc">
+            <textarea placeholder="0" type="number"></textarea>
+            <div id="botones">
+                <div id="izq">
+                    <div id="white">
+                        <button id="clear">AC</button>
+                        <button id="swmm">+/-</button>
+                        <button id="percentage">%</button>
+                    </div>
+                    <div id="numeros">
+                        <div id="fila">
+                            <button id="num1">1</button>
+                            <button id="num2">2</button>
+                            <button id="num3">3</button>
+                        </div>
+                        <div id="fila">
+                            <button id="num4">4</button>
+                            <button id="num5">5</button>
+                            <button id="num6">6</button>
+                        </div>
+                        <div id="fila">
+                            <button id="num7">7</button>
+                            <button id="num8">8</button>
+                            <button id="num9">9</button>
+                        </div>
+                        <div id="fila">
+                            <button id="none">#</button>
+                            <button id="num0">0</button>
+                            <button id="com">,</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="der">
+                    <div id="orange">
+                        <button id="div">/</button>
+                        <button id="mult">x</button>
+                        <button id="men">-</button>
+                        <button id="mas">+</button>
+                        <button id="igual">=</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
