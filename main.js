@@ -126,24 +126,21 @@ function igualf(){
         console.log("falta un número")    
     }else{
         if(boolDiv == true){
-            textarea.value = parseFloat(tempNum1) / parseFloat(tempNum2);
-            console.log(parseFloat(tempNum1) / parseFloat(tempNum2));
+            x = parseFloat(tempNum1) / parseFloat(tempNum2);
         }else if(boolMult == true){
-            textarea.value = parseFloat(tempNum1) * parseFloat(tempNum2);
-            console.log(parseFloat(tempNum1) * parseFloat(tempNum2));
+            x = parseFloat(tempNum1) * parseFloat(tempNum2);
         }else if(boolMen == true){
-            textarea.value = parseFloat(tempNum1) - parseFloat(tempNum2);
-            console.log(parseFloat(tempNum1) - parseFloat(tempNum2));
+            x = parseFloat(tempNum1) - parseFloat(tempNum2);
         }else if(boolMas == true){
-            textarea.value = parseFloat(tempNum1) + parseFloat(tempNum2);
-            console.log(parseFloat(tempNum1) + parseFloat(tempNum2));
+            x = parseFloat(tempNum1) + parseFloat(tempNum2);
         }else{
             //Error
         }
-        tempNum1 = textarea.value;
+        tempNum1 = x;
         tempNum2 = null;
         boolLimpiar = true;
         clean();
+        textarea.value = x;
     }
 }
 function operador(){
